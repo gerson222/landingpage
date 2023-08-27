@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- La etiqueta DOCTYPE declara la versión de HTML que se está utilizando en el documento. Es esencial para asegurar que el navegador interprete el código correctamente. -->
+<html lang="es">
+<!-- La etiqueta html es la envoltura principal para todo el contenido HTML en el documento. -->
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Landing Page de Reaper</title>
+</head>
+
+<body>
+   <nav class="navbar">
+      <div class="nav-left">
+         <ul class="nav-links">
+            <li><a href="#quienes-somos">Quienes Somos</a></li>
+         </ul>
+      </div>
+      <div class="logo">
+         <img src="Kit Tema 6/6-logo-color.png" alt="Logo Reaper">
+         <!-- La etiqueta img se utiliza para insertar imágenes en la página. La atributo src especifica la ruta de la imagen, mientras que alt proporciona un texto alternativo en caso de que la imagen no se pueda mostrar. -->
+      </div>
+      <div class="nav-right">
+         <ul class="nav-links">
+            <li><a href="#form">¡Quiero Participar!</a></li>
+         </ul>
+      </div>
+   </nav>
+
+   <main>
+      <header id="quienes-somos" class="header">
+         <h1 class="header-title">Equipo Reaper</h1>
+         <p class="header-description">
+            ¡Bienvenidos al equipo Reaper! Somos un apasionado grupo de jugadores que compiten en diversos juegos.
+            Nuestro objetivo es destacarnos en el mundo de los deportes electrónicos y llevar la competición al
+            siguiente
+            nivel. Con un enfoque en la estrategia y la cooperación en equipo, nos esforzamos por lograr la victoria en
+            cada
+            partida.
+         </p>
+
+         <section class="header-members">
+            <article class="member">
+               <img src="miembro1.jpg" alt="Miembro 1">
+               <h2 class="member-name">Lucía "ShadowStrike" González</h2>
+               <p class="member-info">Edad: 25</p>
+               <p class="member-info">Rol: Tanque</p>
+            </article>
+            <article class="member">
+               <img src="miembro2.jpg" alt="Miembro 2">
+               <h2 class="member-name">Martín "SnipeMaster" Rodríguez</h2>
+               <p class="member-info">Edad: 22</p>
+               <p class="member-info">Rol: Support</p>
+            </article>
+            <article class="member">
+               <img src="miembro3.jpg" alt="Miembro 3">
+               <h2 class="member-name">Valeria "BlazeQueen" Silva</h2>
+               <p class="member-info">Edad: 21</p>
+               <p class="member-info">Rol: DPS</p>
+            </article>
+            <article class="member">
+               <img src="miembro4.jpg" alt="Miembro 4">
+               <h2 class="member-name">Javier "StormRider" Morales</h2>
+               <p class="member-info">Edad: 24</p>
+               <p class="member-info">Rol: Tanque</p>
+            </article>
+            <article class="member">
+               <img src="miembro5.jpg" alt="Miembro 5">
+               <h2 class="member-name">María "NovaMage" Fernández</h2>
+               <p class="member-info">Edad: 23</p>
+               <p class="member-info">Rol: DPS</p>
+            </article>
+         </section>
+      </header>
+
+      <section id="form" class="section">
+         <div class="colum1">
+            <iframe src="https://www.youtube.com/embed/mz-Gjb_h78w?si=escMZOgl7nhEuPwF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/cXlbO3iSBw4?si=d2MyDVzjADeQq6xB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+         <div class="colum2">
+            <!-- Título de la sección -->
+            <h2 class="section-title">¡Quiero Participar!</h2>
+            <!-- Formulario de participación -->
+            <form action="#" class="form">
+               <!-- Campo de entrada para el nombre -->
+               <label for="nombre" class="form-label">Nombre:</label>
+               <input type="text" id="nombre" name="nombre" class="form-input" required>
+         
+               <!-- Campo de entrada para el email -->
+               <label for="email" class="form-label">Email:</label>
+               <input type="email" id="email" name="email" class="form-input" required>
+         
+               <!-- Campo de entrada para la edad -->
+               <label for="edad" class="form-label">Edad:</label>
+               <input type="number" id="edad" name="edad" class="form-input" required>
+         
+               <!-- Campo de entrada para el mensaje -->
+               <label for="mensaje" class="form-label">Contanos sobre vos:</label>
+               <textarea id="mensaje" name="mensaje" rows="4" class="form-textarea" required></textarea>
+         
+               <!-- Botón de envío del formulario -->
+               <button type="submit" class="form-button">Enviar</button>
+         </div>
+         <div class="colum3">
+            <iframe src="https://www.youtube.com/embed/RU4w7zimfjI?si=oGe73GIWqZvsD-8p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/kmNui6kC1Lk?si=rGQ4y6LufVK-kOEv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+         </form>
+      </section>
+   </main>
+
+   <footer class="footer">
+      <p class="footer-contact">Contacto: contacto@reaperesports.com</p>
+      <div class="redes-sociales">
+         <a href="#" target="_blank" class="redes-sociales-link"><img src="facebook-icon.png" alt="Facebook"></a>
+         <a href="#" target="_blank" class="redes-sociales-link"><img src="twitter-icon.png" alt="Twitter"></a>
+         <a href="#" target="_blank" class="redes-sociales-link"><img src="instagram-icon.png" alt="Instagram"></a>
+      </div>
+   </footer>
+
+   <script src="script.js"></script>
+</body>
+
+</html>

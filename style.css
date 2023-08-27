@@ -1,0 +1,187 @@
+/* Esto es la definición de variables de colores */
+:root {
+  --negro: #040303;
+  --crema: #f3e4ca;
+  --cafe: #48332b;
+  --rojo: #e43f25;
+  --rojo-oscuro: #f23f26;
+  --gris: #9f9f9f;
+}
+
+/* Esto es el reseteo de estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+}
+
+/* Esto es la importación de una fuente externa */
+@import url(https://db.onlinewebfonts.com/c/aeb521111b7555ddaeafdcdf78fd8aae?family=Sugo+Pro+Display+Trial+Regular);
+
+/* Esto es el estilo del cuerpo del documento */
+body {
+  font-family: "Sugo Pro Display Trial Regular";
+}
+
+main {
+  background-color: var(--gris);
+}
+
+/* Esto es el estilo de la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  background-color: var(--crema);
+  padding: 10px;
+}
+
+/* Esto es el estilo de los enlaces de navegación */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--cafe);
+  font-size: 40px;
+}
+
+/* Esto es el estilo del encabezado */
+.header {
+  text-align: center;
+  padding: 80px 0;
+  background-color: var(--rojo);
+}
+
+/* Esto es el estilo de las secciones */
+.section {
+  text-align: center;
+  padding: 50px 0;
+  display: flex;
+  justify-content:space-between;
+  
+}
+
+/* Esto es el estilo del título de sección */
+.section-title {
+  font-size: 36px;
+  color: var(--cafe);
+  margin-bottom: 20px;
+}
+
+/* Esto es el estilo del formulario */
+.form {
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Esto es el estilo de las etiquetas del formulario */
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 27px;
+}
+
+/* Esto es el estilo de los campos de entrada del formulario */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid var(--negro);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Esto es el estilo del botón del formulario */
+.form-button {
+  background-color: var(--cafe);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 27px;
+}
+
+/* Esto es el estilo del pie de página */
+.footer {
+  background-color: var(--cafe);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Esto es el estilo de información de contacto en el pie de página */
+.footer-contact {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+/* Esto es el estilo de enlaces a redes sociales en el pie de página */
+.redes-sociales-link {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 21px;
+}
+
+/* Esto es el estilo del logo y la alineación a la izquierda de la barra de navegación */
+.logo img {
+  width: 175px;
+  margin: 0 auto;
+}
+
+/* Esto es el estilo de la sección de miembros en el encabezado */
+.header-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* Esto es el estilo de un miembro en la sección de miembros */
+.member {
+  text-align: center;
+  margin-bottom: 30px;
+  width: calc(20% - 20px); /* Para que haya 5 columnas con margen */
+}
+
+/* Esto es el estilo de la imagen de un miembro */
+.member img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Esto es el estilo del nombre de un miembro */
+.member-name {
+  font-size: 24px;
+  color: var(--cafe);
+  margin-bottom: 5px;
+}
+
+/* Esto es el estilo de la información de un miembro */
+.member-info {
+  font-size: 18px;
+  color: var(--negro);
+}
+
+iframe{
+  width: 400px; 
+  height: 300px;
+}
+
+h1{
+  font-size: 45px;
+}
+
+p{
+  font-size: 22px;
+}
