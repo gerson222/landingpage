@@ -1,187 +1,190 @@
-/* Esto es la definición de variables de colores */
+/* Aquí definimos los colores que vamos a usar en nuestra página */
 :root {
-  --negro: #040303;
-  --crema: #f3e4ca;
-  --cafe: #48332b;
-  --rojo: #e43f25;
-  --rojo-oscuro: #f23f26;
-  --gris: #9f9f9f;
+  --negro: #040303; /* Un color muy oscuro, casi negro */
+  --crema: #f3e4ca; /* Un color suave, como el color del papel crema */
+  --cafe: #48332b; /* Un tono similar al color del café */
+  --rojo: #e43f25; /* Un color rojo intenso */
+  --rojo-oscuro: #f23f26; /* Un tono un poco más oscuro de rojo */
+  --gris: #9f9f9f; /* Un gris neutro, como el color del plomo */
 }
 
-/* Esto es el reseteo de estilos generales */
+/* Aquí reseteamos los estilos por defecto de los elementos en la página */
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  background: transparent;
+  margin: 0; /* Quitamos los espacios alrededor de los elementos */
+  padding: 0; /* Quitamos el espacio interno de los elementos */
+  border: 0; /* Quitamos los bordes que puedan tener los elementos */
+  outline: 0; /* Quitamos el contorno que aparece cuando hacemos clic en algo */
+  font-size: 100%; /* Mantenemos el tamaño de la fuente normal */
+  background: transparent; /* Hacemos el fondo transparente */
 }
 
-/* Esto es la importación de una fuente externa */
+/* Aquí traemos una fuente de texto especial desde internet */
 @import url(https://db.onlinewebfonts.com/c/aeb521111b7555ddaeafdcdf78fd8aae?family=Sugo+Pro+Display+Trial+Regular);
 
-/* Esto es el estilo del cuerpo del documento */
+/* Establecemos la fuente que usaremos para todo el texto en la página */
 body {
-  font-family: "Sugo Pro Display Trial Regular";
+  font-family: "Sugo Pro Display Trial Regular"; /* Usamos la fuente que trajimos */
 }
 
+/* Cambiamos el color de fondo de la sección principal a un gris suave */
 main {
   background-color: var(--gris);
 }
 
-/* Esto es el estilo de la barra de navegación */
+/* Hacemos que la barra de navegación tenga un fondo crema y esté centrada */
 .navbar {
-  display: flex;
-  justify-content:space-evenly;
-  align-items: center;
-  background-color: var(--crema);
-  padding: 10px;
+  display: flex; /* Hacemos que los elementos estén en línea uno al lado del otro */
+  justify-content: space-evenly; /* Espaciamos los elementos uniformemente */
+  align-items: center; /* Centramos verticalmente los elementos */
+  background-color: var(--crema); /* Ponemos un fondo crema */
+  padding: 10px; /* Añadimos un poco de espacio interno a la barra */
 }
 
-/* Esto es el estilo de los enlaces de navegación */
+/* Estilizamos los enlaces de navegación para que se vean agradables */
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+  list-style: none; /* Quitamos las viñetas de la lista */
+  display: flex; /* Hacemos que los enlaces estén en línea uno al lado del otro */
+  gap: 20px; /* Dejamos un espacio entre los enlaces */
 }
 
 .nav-links li a {
-  text-decoration: none;
-  color: var(--cafe);
-  font-size: 40px;
+  text-decoration: none; /* Quitamos el subrayado de los enlaces */
+  color: var(--cafe); /* Hacemos que el texto sea de color café */
+  font-size: 40px; /* Ponemos un tamaño grande para el texto de los enlaces */
 }
 
-/* Esto es el estilo del encabezado */
+/* Le damos estilo al encabezado de la página para que se vea llamativo */
 .header {
-  text-align: center;
-  padding: 80px 0;
-  background-color: var(--rojo);
+  text-align: center; /* Centramos el contenido del encabezado */
+  padding: 80px 0; /* Añadimos un poco de espacio alrededor del encabezado */
+  background-color: var(--rojo); /* Ponemos un fondo rojo para resaltar */
 }
 
-/* Esto es el estilo de las secciones */
+/* Alineamos y espaciamos las secciones para que se vean organizadas */
 .section {
-  text-align: center;
-  padding: 50px 0;
-  display: flex;
-  justify-content:space-between;
-  
+  text-align: center; /* Centramos el contenido de las secciones */
+  padding: 50px 0; /* Añadimos espacio alrededor de las secciones */
+  display: flex; /* Hacemos que los elementos estén en línea uno al lado del otro */
+  justify-content: space-between; /* Espaciamos uniformemente los elementos */
 }
 
-/* Esto es el estilo del título de sección */
+/* Ponemos un estilo al título de cada sección */
 .section-title {
-  font-size: 36px;
-  color: var(--cafe);
-  margin-bottom: 20px;
+  font-size: 36px; /* Hacemos que el título sea grande */
+  color: var(--cafe); /* Ponemos un color café al título */
+  margin-bottom: 20px; /* Dejamos un espacio debajo del título */
 }
 
-/* Esto es el estilo del formulario */
+/* Le damos estilo al formulario para que se vea ordenado */
 .form {
-  text-align: center;
-  padding: 50px 0;
+  text-align: center; /* Centramos el contenido del formulario */
+  padding: 50px 0; /* Añadimos espacio alrededor del formulario */
 }
 
-/* Esto es el estilo de las etiquetas del formulario */
+/* Hacemos que las etiquetas del formulario se vean en negrita */
 .form-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  font-size: 27px;
+  display: block; /* Hacemos que cada etiqueta ocupe todo el ancho */
+  font-weight: bold; /* Hacemos que el texto sea más grueso */
+  margin-bottom: 5px; /* Dejamos un espacio debajo de la etiqueta */
+  font-size: 27px; /* Ponemos un tamaño grande para las etiquetas */
 }
 
-/* Esto es el estilo de los campos de entrada del formulario */
+/* Estilizamos los campos de entrada y áreas de texto del formulario */
 .form-input,
 .form-textarea {
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid var(--negro);
-  border-radius: 5px;
-  font-size: 16px;
+  width: 100%; /* Hacemos que los campos ocupen todo el ancho disponible */
+  padding: 15px; /* Añadimos espacio interno a los campos */
+  margin-bottom: 20px; /* Dejamos un espacio debajo de los campos */
+  border: 1px solid var(--negro); /* Ponemos un borde negro alrededor */
+  border-radius: 5px; /* Hacemos que los bordes sean redondeados */
+  font-size: 16px; /* Ponemos un tamaño de fuente para los campos */
 }
 
-/* Esto es el estilo del botón del formulario */
+/* Estilizamos el botón del formulario para que llame la atención */
 .form-button {
-  background-color: var(--cafe);
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 27px;
+  background-color: var(--cafe); /* Ponemos un fondo café al botón */
+  color: white; /* Hacemos que el texto sea blanco */
+  padding: 12px 25px; /* Añadimos espacio interno al botón */
+  border: none; /* Quitamos el borde al botón */
+  border-radius: 5px; /* Hacemos que los bordes sean redondeados */
+  cursor: pointer; /* Cambiamos el cursor al pasar por encima */
+  font-size: 27px; /* Ponemos un tamaño grande para el botón */
 }
 
-/* Esto es el estilo del pie de página */
+/* Estilizamos el pie de página para que se vea completo */
 .footer {
-  background-color: var(--cafe);
-  color: white;
-  text-align: center;
-  padding: 20px;
+  background-color: var(--cafe); /* Ponemos un fondo café al pie de página */
+  color: white; /* Hacemos que el texto sea blanco */
+  text-align: center; /* Centramos el contenido del pie de página */
+  padding: 20px; /* Añadimos espacio alrededor del pie de página */
 }
 
-/* Esto es el estilo de información de contacto en el pie de página */
+/* Hacemos que la información de contacto en el pie de página se vea bien */
 .footer-contact {
-  margin-bottom: 10px;
-  font-size: 24px;
+  margin-bottom: 10px; /* Dejamos un espacio debajo de la información */
+  font-size: 24px; /* Ponemos un tamaño grande para el texto */
 }
 
-/* Esto es el estilo de enlaces a redes sociales en el pie de página */
+/* Estilizamos los enlaces a redes sociales en el pie de página */
 .redes-sociales-link {
-  display: inline-block;
-  margin: 0 10px;
-  font-size: 21px;
+  display: inline-block; /* Hacemos que los enlaces estén en línea uno al lado del otro */
+  margin: 0 10px; /* Dejamos un espacio a los lados de cada enlace */
+  font-size: 21px; /* Ponemos un tamaño grande para los enlaces */
 }
 
-/* Esto es el estilo del logo y la alineación a la izquierda de la barra de navegación */
+/* Estilizamos el logo y lo alineamos a la izquierda de la barra de navegación */
 .logo img {
-  width: 175px;
-  margin: 0 auto;
+  width: 175px; /* Definimos el ancho del logo */
+  margin: 0 auto; /* Centramos el logo horizontalmente */
 }
 
-/* Esto es el estilo de la sección de miembros en el encabezado */
+/* Alineamos y espaciamos los miembros en el encabezado */
 .header-members {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 40px;
+  display: flex; /* Hacemos que los elementos estén en línea uno al lado del otro */
+  justify-content: space-around; /* Espaciamos uniformemente los elementos */
+  flex-wrap: wrap; /* Si no caben en una fila, los ponemos en la siguiente */
+  margin-top: 40px; /* Dejamos un espacio arriba de los miembros */
 }
 
-/* Esto es el estilo de un miembro en la sección de miembros */
+/* Estilizamos la información de cada miembro */
 .member {
-  text-align: center;
-  margin-bottom: 30px;
-  width: calc(20% - 20px); /* Para que haya 5 columnas con margen */
+  text-align: center; /* Centramos el contenido de cada miembro */
+  margin-bottom: 30px; /* Dejamos un espacio debajo de cada miembro */
+  width: calc(20% - 20px); /* Calculamos el ancho de cada miembro */
 }
 
-/* Esto es el estilo de la imagen de un miembro */
+/* Estilizamos la imagen de cada miembro */
 .member img {
-  width: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+  width: 100px; /* Definimos el ancho de la imagen */
+  border-radius: 50%; /* Hacemos que la imagen sea redonda */
+  margin-bottom: 10px; /* Dejamos un espacio debajo de la imagen */
 }
 
-/* Esto es el estilo del nombre de un miembro */
+/* Estilizamos el nombre de cada miembro */
 .member-name {
-  font-size: 24px;
-  color: var(--cafe);
-  margin-bottom: 5px;
+  font-size: 24px; /* Ponemos un tamaño grande para el nombre */
+  color: var(--cafe); /* Ponemos un color café al nombre */
+  margin-bottom: 5px; /* Dejamos un espacio debajo del nombre */
 }
 
-/* Esto es el estilo de la información de un miembro */
+/* Estilizamos la información de cada miembro */
 .member-info {
-  font-size: 18px;
-  color: var(--negro);
+  font-size: 18px; /* Ponemos un tamaño grande para la información */
+  color: var(--negro); /* Ponemos un color negro a la información */
 }
 
-iframe{
-  width: 400px; 
-  height: 300px;
+/* Ajustamos el tamaño de los iframes para que se vean bien */
+iframe {
+  width: 400px; /* Definimos el ancho del iframe */
+  height: 300px; /* Definimos el alto del iframe */
 }
 
-h1{
-  font-size: 45px;
+/* Cambiamos el tamaño de los títulos para que se vean llamativos */
+h1 {
+  font-size: 45px; /* Ponemos un tamaño grande para los títulos */
 }
 
-p{
-  font-size: 22px;
+/* Cambiamos el tamaño de los párrafos para que sean fáciles de leer */
+p {
+  font-size: 22px; /* Ponemos un tamaño grande para los párrafos */
 }
