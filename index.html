@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <!-- La etiqueta DOCTYPE declara la versión de HTML que se está utilizando en el documento. Es esencial para asegurar que el navegador interprete el código correctamente. -->
 <html lang="es">
-<!-- La etiqueta html es la envoltura principal para todo el contenido HTML en el documento. -->
+<!-- La etiqueta html es la envoltura principal para todo el contenido HTML en el documento. el atributo lang es para indicar el lenguage de nuestra pagina. -->
 <head>
+<!-- La etiqueta head contiene metadatos y enlaces a recursos externos que no se muestran directamente en la página. Se utiliza para configurar configuraciones y vinculaciones. -->
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
    <title>Landing Page de Reaper</title>
+   <!-- La etiqueta title establece el título de la página que se muestra en la pestaña del navegador y en los resultados de búsqueda. Ayuda a los usuarios a identificar el contenido de la página. -->
 </head>
 
 <body>
+<!-- La etiqueta body contiene el contenido visible de la página web. Aquí se colocan elementos como texto, imágenes, enlaces y otros elementos que los usuarios pueden ver y interactuar. -->
    <nav class="navbar">
+   <!-- La etiqueta nav se utiliza para definir la navegación principal de la página. Contiene enlaces a diferentes secciones o páginas del sitio web. -->
       <div class="nav-left">
+      <!-- La etiqueta div se usa para crear divisiones genéricas en el contenido. No tiene significado semántico propio, pero se utiliza para agrupar y estilizar contenido. -->
          <ul class="nav-links">
             <li><a href="#quienes-somos">Quienes Somos</a></li>
          </ul>
@@ -24,12 +29,16 @@
          <ul class="nav-links">
             <li><a href="#form">¡Quiero Participar!</a></li>
          </ul>
+         <!-- La etiqueta ul se utiliza para crear una lista no ordenada, mientras que la etiqueta li define los elementos de la lista. Se utiliza para presentar información de manera organizada en forma de lista. -->
       </div>
    </nav>
 
    <main>
+   <!-- La etiqueta main se utiliza para definir el contenido principal del documento. Debe contener el contenido central de la página, excluyendo encabezados y pies de página. -->
       <header id="quienes-somos" class="header">
+      <!-- La etiqueta header se utiliza para definir la cabecera de una sección o de toda la página. Suele contener elementos como logotipos, títulos y menús de navegación. -->
          <h1 class="header-title">Equipo Reaper</h1>
+         <!-- Las etiquetas h1 a h6 se utilizan para definir encabezados jerárquicos. h1 es el más alto y h6 es el más bajo. Proporcionan estructura y jerarquía al contenido de la página. -->
          <p class="header-description">
             ¡Bienvenidos al equipo Reaper! Somos un apasionado grupo de jugadores que compiten en diversos juegos.
             Nuestro objetivo es destacarnos en el mundo de los deportes electrónicos y llevar la competición al
@@ -38,9 +47,12 @@
             cada
             partida.
          </p>
+         <!-- La etiqueta p se usa para definir párrafos de texto. Divide y organiza el contenido de manera legible para los usuarios. -->
 
          <section class="header-members">
+         <!-- La etiqueta section se utiliza para dividir el contenido en secciones temáticas o bloques. Ayuda a estructurar y organizar el contenido de manera significativa. -->
             <article class="member">
+               <!-- La etiqueta article se utiliza para encapsular contenido autónomo que podría existir y ser reutilizado por separado de la página principal. Por ejemplo, noticias, entradas de blog, etc. -->
                <img src="miembro1.jpg" alt="Miembro 1">
                <h2 class="member-name">Lucía "ShadowStrike" González</h2>
                <p class="member-info">Edad: 25</p>
@@ -79,28 +91,29 @@
             <iframe src="https://www.youtube.com/embed/cXlbO3iSBw4?si=d2MyDVzjADeQq6xB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
          </div>
          <div class="colum2">
-            <!-- Título de la sección -->
             <h2 class="section-title">¡Quiero Participar!</h2>
             <!-- Formulario de participación -->
-            <form action="#" class="form">
-               <!-- Campo de entrada para el nombre -->
+            <form action="POST" class="form">
+            <!-- La etiqueta <form> en HTML crea un formulario interactivo para recopilar y enviar datos ingresados por los usuarios. Permite agrupar elementos como campos de texto, botones y más, y define cómo se procesan los datos en el servidor. El atributo "action" especifica la URL a la que se enviarán los datos, y el atributo "method" define si se utilizará "GET" o "POST" para enviar los datos. -->
                <label for="nombre" class="form-label">Nombre:</label>
+               <!-- La etiqueta <label> en HTML se utiliza para asociar un texto descriptivo con un elemento de formulario, como <input> o <textarea>. Proporciona contexto y ayuda a los usuarios a entender qué tipo de información se espera en el campo de entrada. -->
                <input type="text" id="nombre" name="nombre" class="form-input" required>
+               <!-- La etiqueta <input> se utiliza para crear campos de entrada interactivos en un formulario. Puede representar varios tipos de entrada, como texto, números, casillas de verificación, botones de radio y más. El atributo "type" define el tipo de entrada que se mostrará, y el atributo "name" se utiliza para identificar el campo en el servidor cuando se envía el formulario. -->
          
-               <!-- Campo de entrada para el email -->
                <label for="email" class="form-label">Email:</label>
                <input type="email" id="email" name="email" class="form-input" required>
          
-               <!-- Campo de entrada para la edad -->
                <label for="edad" class="form-label">Edad:</label>
                <input type="number" id="edad" name="edad" class="form-input" required>
          
                <!-- Campo de entrada para el mensaje -->
                <label for="mensaje" class="form-label">Contanos sobre vos:</label>
                <textarea id="mensaje" name="mensaje" rows="4" class="form-textarea" required></textarea>
+               <!-- La etiqueta <textarea> se utiliza para crear un área de texto de múltiples líneas en un formulario. Los usuarios pueden ingresar texto extenso aquí, como comentarios o mensajes. El atributo "name" se utiliza para identificar el campo en el servidor cuando se envía el formulario, y el atributo "rows" define la cantidad visible de filas de texto. -->
          
                <!-- Botón de envío del formulario -->
                <button type="submit" class="form-button">Enviar</button>
+               <!-- La etiqueta <button> se utiliza para crear botones interactivos en un formulario o en cualquier parte de la página. Puede contener texto o elementos secundarios, como imágenes o íconos. Los botones se utilizan para enviar formularios, activar acciones en la página o realizar interacciones específicas. -->
          </div>
          <div class="colum3">
             <iframe src="https://www.youtube.com/embed/RU4w7zimfjI?si=oGe73GIWqZvsD-8p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -111,11 +124,13 @@
    </main>
 
    <footer class="footer">
+   <!-- La etiqueta footer se utiliza para definir el pie de página de una sección o de toda la página. Suele contener información de contacto, enlaces de redes sociales y otros elementos de cierre. -->
       <p class="footer-contact">Contacto: contacto@reaperesports.com</p>
       <div class="redes-sociales">
          <a href="#" target="_blank" class="redes-sociales-link"><img src="facebook-icon.png" alt="Facebook"></a>
          <a href="#" target="_blank" class="redes-sociales-link"><img src="twitter-icon.png" alt="Twitter"></a>
          <a href="#" target="_blank" class="redes-sociales-link"><img src="instagram-icon.png" alt="Instagram"></a>
+         <!-- La etiqueta a se utiliza para crear enlaces hipervínculos. Permite a los usuarios navegar entre diferentes páginas web o secciones de la misma página. -->
       </div>
    </footer>
 
