@@ -188,3 +188,24 @@ h1 {
 p {
   font-size: 22px; /* Ponemos un tamaño grande para los párrafos */
 }
+
+.scroll-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--crema);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid var(--cafe);
+  margin: 12px auto;
+}

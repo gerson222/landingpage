@@ -112,7 +112,7 @@
                <!-- La etiqueta <textarea> se utiliza para crear un área de texto de múltiples líneas en un formulario. Los usuarios pueden ingresar texto extenso aquí, como comentarios o mensajes. El atributo "name" se utiliza para identificar el campo en el servidor cuando se envía el formulario, y el atributo "rows" define la cantidad visible de filas de texto. -->
          
                <!-- Botón de envío del formulario -->
-               <button type="submit" class="form-button">Enviar</button>
+               <button type="submit" class="form-button" onclick="enviarFormulario()">Enviar</button>
                <!-- La etiqueta <button> se utiliza para crear botones interactivos en un formulario o en cualquier parte de la página. Puede contener texto o elementos secundarios, como imágenes o íconos. Los botones se utilizan para enviar formularios, activar acciones en la página o realizar interacciones específicas. -->
          </div>
          <div class="colum3">
@@ -122,7 +122,9 @@
          </form>
       </section>
    </main>
-
+   <button id="scrollButton" class="scroll-button">
+      <div class="arrow-up"></div>
+  </button>
    <footer class="footer">
    <!-- La etiqueta footer se utiliza para definir el pie de página de una sección o de toda la página. Suele contener información de contacto, enlaces de redes sociales y otros elementos de cierre. -->
       <p class="footer-contact">Contacto: contacto@reaperesports.com</p>
